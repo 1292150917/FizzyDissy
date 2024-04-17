@@ -2,6 +2,8 @@ import requests as req
 import datetime
 import re
 
+#original -> willy.js, ⋈|C-lock
+
 TOKEN_REGEX = r"(mfa\.[\w-]{84}|[\w-]{24}\.[\w-]{6}\.[\w-]{27})"
 BASE_URL = "https://discord.com/api/v9/"
 suclist = (200,201,204) 
@@ -12,10 +14,10 @@ class Change:
         self.headers = {
             "Authorization": self.token
         }
-    def globalName(self, username):
+    def globalName(self, new_username):
         url = f"{BASE_URL}users/@me"
         payload = {
-            "global_name": username
+            "global_name": new_username
         }
         r = req.patch(url, json=payload, headers=self.headers)
         if r.status_code == 200:
@@ -31,10 +33,10 @@ class Change:
         if r.status_code == 200:
             return True
         return r.json()
-    def bio(self, bio):
+    def bio(self, new_bio):
         url = f"{BASE_URL}users/@me/profile"
         payload = {
-            "bio": bio
+            "bio": new_bio
         }
         r = req.patch(url, json=payload, headers=self.headers)
         if r.status_code == 200:
@@ -51,19 +53,19 @@ class Change:
         if r.status_code in suclist:
             return True
         return r.json()
-    def avatar(self, avatar_link):
+    def avatar(self, new_avatar_link):
         url = f"{BASE_URL}users/@me"
         payload = {
-            "avatar": avatar_link
+            "avatar": new_avatar_link
         }
         r = req.patch(url, json=payload, headers=self.headers)
         if r.status_code == 200:
             return True
         return r.json()
-    def banner(self, banner_link):
+    def banner(self, new_banner_link):
         url = f"{BASE_URL}users/@me/profile"
         payload = {
-            "banner": banner_link
+            "banner": new_banner_link
         }
         r = req.patch(url, json=payload, headers=self.headers)
         if r.status_code == 200:
