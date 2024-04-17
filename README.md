@@ -75,7 +75,7 @@ api.query.<Function>
 ```Python
 api.add.<Function>
 ```
-| Function |  Delete                |
+| Function |  Send/Add/Join             |
 | :--------| :------------------------- |
 | `.message(channel_id, content)` |It sends a message to the channel you specify.|
 | `.server(invite_code)` | It will join the server where you typed the invitation code. |
