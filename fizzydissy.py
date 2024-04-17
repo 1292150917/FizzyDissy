@@ -2,8 +2,6 @@ import requests as req
 import datetime
 import re
 
-#original -> willy.js, ⋈|C-lock
-
 TOKEN_REGEX = r"(mfa\.[\w-]{84}|[\w-]{24}\.[\w-]{6}\.[\w-]{27})"
 BASE_URL = "https://discord.com/api/v9/"
 suclist = (200,201,204) 
