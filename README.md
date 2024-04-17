@@ -59,7 +59,7 @@ api.get.<Function>
 | `.servers(FullJson)` | Returns all servers you have joined. |
 | `.isNitro(FullJson)` | Returns whether nitro is present. |
 
-**NOTE:** By making ```Python FullJson=True```, you can get the information from the API in raw form without simplifying it. This data will be much more detailed, but it can be a bit complicated to process.
+**NOTE:** By making ```FullJson=True```, you can get the information from the API in raw form without simplifying it. This data will be much more detailed, but it can be a bit complicated to process.
 
 ## Query Class Functions
 ```Python
