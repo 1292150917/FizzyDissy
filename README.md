@@ -3,7 +3,7 @@
 
 ## A very easy library for using Discord APIs.
 ###
-<img align="right" width="159px" src="https://raw.githubusercontent.com/gin-gonic/logo/master/color.png](https://github.com/system-linux/FizzyDissy/blob/main/logo.png">
+<img align="right" width="159px" src="logo.png">
 ### Basic parameter
 
 | Parameter | Type     | Description                |
