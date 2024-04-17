@@ -1,4 +1,5 @@
 # Fizcord
+<a name="readme-top"></a>
 Easy library for using Discord APIs.
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
