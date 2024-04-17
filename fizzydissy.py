@@ -3,7 +3,7 @@ import datetime
 import re
 
 TOKEN_REGEX = r"(mfa\.[\w-]{84}|[\w-]{24}\.[\w-]{6}\.[\w-]{27})"
-BASE_URL = "https://discord.com/api/v9/"
+BASE_URL = "https://discord.com/api/v10/"
 suclist = (200,201,204) 
 
 class Change:
@@ -101,7 +101,7 @@ class Delete(Change):
 class Get(Change):
     def __init__(self, token):
         super().__init__(token)
-    
+
     def friends(self, FullJson=False) -> dict:
         url = f"{BASE_URL}users/@me/relationships"
         r = req.get(url, headers=self.headers)
@@ -206,7 +206,7 @@ class Add(Get):
         return r.json()
 
         
-class FizzyDiscord:
+class FizzyDissy:
     sentMessages = {}
     deletedMessages = []
     def __init__(self, token):
