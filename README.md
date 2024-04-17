@@ -1,25 +1,81 @@
-# Fizcord
-<a name="readme-top"></a>
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Best-README-Template</h3>
+# FizzyDissy
 
-  <p align="center">
-    Easy library for using Discord APIs.
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
-</div>
+## A very easy library for using Discord APIs.
+###
+### Basic parameter
 
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `TOKEN` | `string` | **Gerekli**. Your bearer token. |
+
+## Usage/Examples
+
+```Python
+import fizzydissy
+
+TOKEN="<YOUR_TOKEN>"
+
+api=FizzyDissy(TOKEN)
+```
+
+## All functions and their parameters
+
+## Change Class Functions
+```Python
+api.change.<Function>
+```
+| Function |  Changes                |
+| :--------| :------------------------- |
+| `.globalName(new_username)` | Your global name. |
+| `.username(username, password)` | Your username. |
+| `.bio(new_bio)` | Your your bio. |
+| `.theme(theme)` | Your discord theme. |
+| `.avatar(new_avatar_link)` | Your avatar. |
+| `.banner()` | Your banner. |
+| `.globalName()` | Global changes its name. |
+| `.globalName()` | Global changes its name. |
+
+## Delete Class Functions
+```Python
+api.delete.<Function>
+```
+| Function |  Delete                |
+| :--------| :------------------------- |
+| `.message(channelId, messageId)` |Message based on the information you sent. |
+| `.friend(userId)` | Your friend(Dude, are you sure you want this ): ?). |
+| `.server(serverId)` | Your discord server. |
+| `.channel(channelId)` | Discord channel. |
+
+## Get Class Functions
+```Python
+api.get.<Function>
+```
+| Function |  Description                |
+| :--------| :------------------------- |
+| `.friends(FullJson)` | Returns all friends in Discord. |
+| `.messages(channel_id, limit)` |It returns the messages on the channel you write as much as the limit you give.|
+| `.servers(FullJson)` | Returns all servers you have joined. |
+| `.isNitro(FullJson)` | Returns whether nitro is present. |
+
+## Query Class Functions
+```Python
+api.query.<Function>
+```
+| Function |  Query                |
+| :--------| :------------------------- |
+| `.friend(username_or_id)` |Queries a friend by name or id. |
+| `.server(servername_or_id)` |Queries a server by name or id.|
+| `.message(channel_id,content_or_id,show_similar_content=False,search_limit)`|Queries the message according to its content or id. You can customise your query with extra parameters.|
+
+## Add Class Functions
+```Python
+api.add.<Function>
+```
+| Function |  Delete                |
+| :--------| :------------------------- |
+| `.message(channel_id, content)` |It sends a message to the channel you specify.|
+| `.server(invite_code)` | It will join the server where you typed the invitation code. |
+
+# LOOK HERE
+**NOTE:** Some functions may not work due to hCaptcha. But it will be fixed in the future.
