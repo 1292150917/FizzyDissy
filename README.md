@@ -3,7 +3,7 @@
 
 ## A very easy library for using Discord APIs.
 ###
-<img align="right" width="159px" src="logo.png">
+<img align="right" width="229px" src="logo.png">
 ### Basic parameter
 
 | Parameter | Type     | Description                |
