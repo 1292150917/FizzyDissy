@@ -3,12 +3,12 @@
 
 ## A very easy library for using Discord APIs.
 ###
-<img align="right" width="159px" src="https://raw.githubusercontent.com/gin-gonic/logo/master/color.png">
+<img align="right" width="159px" src="[https://raw.githubusercontent.com/gin-gonic/logo/master/color.png](https://github.com/system-linux/FizzyDissy/blob/main/logo.png)">
 ### Basic parameter
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `TOKEN` | `string` | **Necessary**. Your bearer token. |
+| `TOKEN` | `string` | **Necessary**. Your Discord bearer token. |
 
 ## Usage/Examples
 
