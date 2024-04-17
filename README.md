@@ -1,13 +1,14 @@
 
-# FizzyDissy
+# FizzyDissy Discord API library
 
 ## A very easy library for using Discord APIs.
 ###
+<img align="right" width="159px" src="https://raw.githubusercontent.com/gin-gonic/logo/master/color.png">
 ### Basic parameter
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `TOKEN` | `string` | **Gerekli**. Your bearer token. |
+| `TOKEN` | `string` | **Necessary**. Your bearer token. |
 
 ## Usage/Examples
 
