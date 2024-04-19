@@ -29,13 +29,11 @@ api.change.<Function>
 | Function |  Changes                |
 | :--------| :------------------------- |
 | `.globalName(new_username)` | Your global name. |
-| `.username(username, password)` | Your username. |
+| `.username(username, password)` | Your username.(Isn't working!) |
 | `.bio(new_bio)` | Your your bio. |
 | `.theme(theme)` | Your discord theme. |
 | `.avatar(new_avatar_link)` | Your avatar. |
-| `.banner()` | Your banner. |
-| `.globalName()` | Global changes its name. |
-| `.globalName()` | Global changes its name. |
+| `.banner(new_banner_link)` | Your banner. |
 
 ## Delete Class Functions
 ```Python
@@ -68,7 +66,7 @@ api.query.<Function>
 | Function |  Query                |
 | :--------| :------------------------- |
 | `.friend(username_or_id)` |Queries a friend by name or id. |
-| `.server(servername_or_id)` |Queries a server by name or id.|
+| `.server(servername_or_id)` |Queries a server by name or id. |
 | `.message(channel_id,content_or_id,show_similar_content=False,search_limit)`|Queries the message according to its content or id. You can customise your query with extra parameters.|
 
 ## Add Class Functions
@@ -78,7 +76,7 @@ api.add.<Function>
 | Function |  Send/Add/Join             |
 | :--------| :------------------------- |
 | `.message(channel_id, content)` |It sends a message to the channel you specify.|
-| `.server(invite_code)` | It will join the server where you typed the invitation code. |
+| `.server(invite_code)` | It will join the server where you typed the invitation code. (Isn't working!) |
 
 # LOOK HERE
 **NOTE:** Some functions may not work due to hCaptcha. But it will be fixed in the future.
